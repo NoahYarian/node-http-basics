@@ -5,9 +5,11 @@
   "main": "server.js",
   "directories": {},
   "scripts": {
-    "test": "mocha --recursive test/unit",
+    "test": "mocha --recursive",
+    "test-unit": "mocha --recursive test/unit",
     "test-integration": "mocha --recursive test/integration",
-    "start": "node server.js"
+    "test-cov": "istanbul cover _mocha -- --recursive",
+    "codeclimate-coverage": "codeclimate-test-reporter < ./coverage/lcov.info"
   },
   "author": "Caleb Gregory <calebgregory@gmail.com>",
   "license": "MIT",
