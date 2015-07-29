@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "directories": {
-  },
+  "directories": {},
   "scripts": {
     "test": "mocha --recursive test/unit",
     "test-integration": "mocha --recursive test/integration",
@@ -15,5 +14,8 @@
   "devDependencies": {
     "chai": "^3.2.0",
     "mocha": "^2.2.5"
+  },
+  "dependencies": {
+    "lodash": "^3.10.0"
   }
 }
