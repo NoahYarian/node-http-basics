@@ -65,4 +65,21 @@ describe('routes', function() {
         });
     });
   });
+  it('should respond to an invalid route', function(done){
+
+    http.get(url + '/invalidRoute', function(res) {
+      var body = '';
+
+      expect(res.statusCode).to.equal(403);
+
+      // res
+      //   .on('data', function (chunk) {
+      //     body += chunk;
+      //   })
+      //   .on('end', function () {
+      //     expect(body).to.contain('Jedi');
+          done();
+      //   });
+    });
+  });
 });
